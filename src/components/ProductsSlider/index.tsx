@@ -3,6 +3,7 @@
 import 'keen-slider/keen-slider.min.css'
 import { useKeenSlider } from "keen-slider/react"
 import { Product } from "../Product"
+import Link from 'next/link'
 
 export function ProductsSlider() {
   const [sliderRef] = useKeenSlider({
@@ -17,7 +18,9 @@ export function ProductsSlider() {
       <div ref={sliderRef} className="keen-slider">
         <div ref={sliderRef} className="keen-slider">
           <div className="keen-slider__slide">
-            <Product />
+            <Link href={'/product/1'}>
+              <Product />
+            </Link>
           </div>
           <div className="keen-slider__slide">
             <Product />

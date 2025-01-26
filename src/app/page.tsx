@@ -1,8 +1,9 @@
 import { ProductsSlider } from "@/components/ProductsSlider";
 
-export default function Home() {
+export default async function Home() {
   return (
     <ProductsSlider />
   )
 }
+
 
